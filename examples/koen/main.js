@@ -1,8 +1,10 @@
+import './tailwind.css';
 import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, range, studioEnvironment } from '../../src/core/engine.js';
 import { Assets, firstMesh, url } from '../../src/core/assets.js';
 import { Pointer } from '../../src/core/input.js';
 import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+import { preloader, cursor, magnetic } from '../../src/core/ui.js';
 import { bakeTexture, fbmNormal } from '../../src/core/textures.js';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
 import { Effect } from 'postprocessing';
@@ -616,7 +618,7 @@ engine.onTick((dt, t) => {
 });
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
-worldNav('koen', { theme: 'light', corner: 'bl' });
+// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('koen', { theme: 'light', corner: 'bl' });
 cur = cursor({ color: '#1d1a17', blend: 'normal', size: 30 });
 magnetic();
 const lenis = smoothScroll({ lerp: 0.07 });
