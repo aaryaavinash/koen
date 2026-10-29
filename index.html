@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./examples/koen/style.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
   <canvas id="gl" aria-hidden="true"></canvas>
@@ -29,7 +29,7 @@
   </svg>
 
   <div class="loader" role="status" aria-live="polite">
-    <div class="loader-enso"><img data-src="img/koen/enso.webp" alt=""><p class="loader-seal" aria-hidden="true"><span>紅</span><span>園</span></p></div>
+    <div class="loader-enso"><img data-src="/img/enso.webp" alt=""><p class="loader-seal" aria-hidden="true"><span>紅</span><span>園</span></p></div>
     <p class="loader-line">Preparing the garden <span class="loader-pct">0</span></p>
   </div>
 
@@ -123,25 +123,25 @@
         <h2 id="nursery-title">Trees looking for their next <em>hundred years.</em></h2>
         <p class="lede">We don't sell bonsai. We place them — with people who will keep them longer than we will. Every adoption includes two house visits a year, a care calendar written for your light, and a winter room at the nursery whenever your tree needs one.</p>
         <ol class="catalogue">
-          <li data-img="img/koen/pine.webp">
+          <li data-img="/img/pine.webp">
             <span class="c-no">No. 031</span>
             <span class="c-name"><b>黒松</b> Kuromatsu <small>Japanese black pine · formal upright</small></span>
             <span class="c-age">120 yrs<small>74 cm</small></span>
             <span class="c-price">¥2,800,000</span>
           </li>
-          <li data-img="img/koen/juniper.webp">
+          <li data-img="/img/juniper.webp">
             <span class="c-no">No. 044</span>
             <span class="c-name"><b>真柏</b> Shimpaku <small>Chinese juniper · driftwood style</small></span>
             <span class="c-age">95 yrs<small>52 cm</small></span>
             <span class="c-price">¥1,650,000</span>
           </li>
-          <li data-img="img/koen/azalea.webp">
+          <li data-img="/img/azalea.webp">
             <span class="c-no">No. 052</span>
             <span class="c-name"><b>皐月</b> Satsuki <small>Satsuki azalea · informal upright</small></span>
             <span class="c-age">60 yrs<small>41 cm</small></span>
             <span class="c-price">¥680,000</span>
           </li>
-          <li data-img="img/koen/quince.webp">
+          <li data-img="/img/quince.webp">
             <span class="c-no">No. 068</span>
             <span class="c-name"><b>長寿梅</b> Chōjubai <small>Dwarf flowering quince · shōhin</small></span>
             <span class="c-age">45 yrs<small>19 cm</small></span>
@@ -234,14 +234,6 @@
   <div class="callout" aria-hidden="true"><svg><line x1="0" y1="0" x2="0" y2="0"/><circle r="3.5"/></svg><p></p></div>
   <div class="preview" aria-hidden="true"><img alt=""></div>
 
-  <script type="module" src="./examples/koen/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
-
-<!-- ORIGINAL (preserved, not deleted — disabled by comment):
-<!doctype html>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=/examples/koen/">
-<title>koen</title>
-<a href="/examples/koen/">Open koen</a>
--->

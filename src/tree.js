@@ -1,6 +1,6 @@
 // The maple: seasonal material (foliage-only hue remap, noise dissolve, snow on top faces, breeze),
 // mesh analysis (where the leaves, trunk and moss are) and procedural winter twigs grown into the canopy.
-import { THREE, clamp, lerp } from '../../src/core/engine.js';
+import { THREE, clamp, lerp } from './core/engine.js';
 import { MeshSurfaceSampler } from 'three/examples/jsm/math/MeshSurfaceSampler.js';
 
 export const NOISE = /* glsl */`

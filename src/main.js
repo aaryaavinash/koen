@@ -1,11 +1,10 @@
 import './tailwind.css';
-import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, range, studioEnvironment } from '../../src/core/engine.js';
-import { Assets, firstMesh, url } from '../../src/core/assets.js';
-import { Pointer } from '../../src/core/input.js';
-import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
-// ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
-import { preloader, cursor, magnetic } from '../../src/core/ui.js';
-import { bakeTexture, fbmNormal } from '../../src/core/textures.js';
+import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, range, studioEnvironment } from './core/engine.js';
+import { Assets, firstMesh, url } from './core/assets.js';
+import { Pointer } from './core/input.js';
+import { smoothScroll, gsap, reveal } from './core/scroll.js';
+import { preloader, cursor, magnetic } from './core/ui.js';
+import { bakeTexture, fbmNormal } from './core/textures.js';
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
 import { Effect } from 'postprocessing';
 import { U, patchTreeMaterial, treeDepthMaterial, patchBarkMaterial, barkDepthMaterial, analyze, growBranches, wireGeometry } from './tree.js';
@@ -78,7 +77,7 @@ const loader = preloader({
 });
 
 // ─── Studio: a washi cyclorama, a walnut slab ─────────────────────────────────
-const washi = new THREE.TextureLoader().load(url('img/koen/washi.webp'), t => { paper.uniforms.get('tPaper').value = t; });
+const washi = new THREE.TextureLoader().load(url('img/washi.webp'), t => { paper.uniforms.get('tPaper').value = t; });
 washi.wrapS = washi.wrapT = THREE.RepeatWrapping;
 washi.colorSpace = THREE.NoColorSpace;
 engine.onResize((w, h) => { paper?.uniforms.get('uScale').value.set(w / 1024, h / 1024); });
@@ -103,7 +102,7 @@ function cycGeometry() {
   return g;
 }
 // An ensō brushed on the wall behind the tree (projected along z, so it follows the cove and takes the tree's shadow).
-const ensoTex = new THREE.TextureLoader().load(url('img/koen/enso.webp'));
+const ensoTex = new THREE.TextureLoader().load(url('img/enso.webp'));
 ensoTex.colorSpace = THREE.SRGBColorSpace;
 ensoTex.anisotropy = 8;
 const cycU = { uWallC: { value: new THREE.Color() }, uFloorC: { value: new THREE.Color() }, uEnso: { value: ensoTex },
@@ -177,7 +176,7 @@ let A = null, treeMesh = null, twigs = null, wire = null, wireInfo = null;
 const barkN = fbmNormal(renderer, { size: 512, scale: 6, octaves: 5, strength: 2.2 });
 barkN.repeat.set(1, 8);
 
-const modelUrl = DBG.get('m') ?? 'models/koen/maple2.glb';
+const modelUrl = DBG.get('m') ?? 'models/maple2.glb';
 const treeLoad = assets.gltf(modelUrl).then(g => {
   const m = g.scene;
   m.rotation.y = +(DBG.get('rot') ?? 0) * D;
@@ -618,7 +617,6 @@ engine.onTick((dt, t) => {
 });
 
 // ─── Boot ─────────────────────────────────────────────────────────────────────
-// ORIGINAL (preserved, not deleted — disabled by comment): worldNav('koen', { theme: 'light', corner: 'bl' });
 cur = cursor({ color: '#1d1a17', blend: 'normal', size: 30 });
 magnetic();
 const lenis = smoothScroll({ lerp: 0.07 });

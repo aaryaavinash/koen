@@ -1,6 +1,6 @@
 // Falling things: maple leaves, samaras and petals as GPU-animated instanced cards that tumble,
 // land and pile up; snow and summer motes as points.
-import { THREE, clamp, lerp } from '../../src/core/engine.js';
+import { THREE, clamp, lerp } from './core/engine.js';
 
 // ─── Atlas (2×2): 7-lobed maple leaf, 5-lobed leaf, cherry petal, samara ──────
 function drawAtlas() {

@@ -1,6 +1,6 @@
 // The year as a number. s is unwrapped (it keeps counting up as the page turns years);
 // f = s mod 4 with 0 = mid-spring, 1 = mid-summer, 2 = peak autumn, 3 = deep winter.
-import { THREE, clamp, smooth } from '../../src/core/engine.js';
+import { THREE, clamp, smooth } from './core/engine.js';
 
 export const wrap = s => ((s % 4) + 4) % 4;
 

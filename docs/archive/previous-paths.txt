@@ -1,0 +1,30 @@
+// ORIGINAL (preserved, not deleted — disabled by comment): previous nested paths
+// import { THREE, clamp, smooth } from '../../src/core/engine.js';
+// import { THREE, clamp, lerp } from '../../src/core/engine.js';
+// import { Engine, THREE, normalize, prepModel, damp, clamp, smooth, lerp, range, studioEnvironment } from '../../src/core/engine.js';
+// import { Assets, firstMesh, url } from '../../src/core/assets.js';
+// import { Pointer } from '../../src/core/input.js';
+// import { smoothScroll, gsap, reveal } from '../../src/core/scroll.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from '../../src/core/ui.js';
+// import { preloader, cursor, magnetic } from '../../src/core/ui.js';
+// import { bakeTexture, fbmNormal } from '../../src/core/textures.js';
+// const washi = new THREE.TextureLoader().load(url('img/koen/washi.webp'), t => { paper.uniforms.get('tPaper').value = t; });
+// const ensoTex = new THREE.TextureLoader().load(url('img/koen/enso.webp'));
+// const modelUrl = DBG.get('m') ?? 'models/koen/maple2.glb';
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('koen', { theme: 'light', corner: 'bl' });
+// import { THREE, clamp, lerp } from '../../src/core/engine.js';
+//     <div class="loader-enso"><img data-src="img/koen/enso.webp" alt=""><p class="loader-seal" aria-hidden="true"><span>紅</span><span>園</span></p></div>
+//           <li data-img="img/koen/pine.webp">
+//           <li data-img="img/koen/juniper.webp">
+//           <li data-img="img/koen/azalea.webp">
+//           <li data-img="img/koen/quince.webp">
+//   <link rel="stylesheet" href="./examples/koen/style.css">
+//   <script type="module" src="./examples/koen/main.js"></script>
+// // ORIGINAL (preserved, not deleted — disabled by comment): import { preloader, cursor, magnetic, worldNav } from './core/ui.js';
+// // ORIGINAL (preserved, not deleted — disabled by comment): worldNav('koen', { theme: 'light', corner: 'bl' });
+// ORIGINAL (preserved, not deleted — disabled by comment): old root HTML image paths
+//     <div class="loader-enso"><img data-src="img/koen/enso.webp" alt=""><p class="loader-seal" aria-hidden="true"><span>紅</span><span>園</span></p></div>
+//           <li data-img="img/koen/pine.webp">
+//           <li data-img="img/koen/juniper.webp">
+//           <li data-img="img/koen/azalea.webp">
+//           <li data-img="img/koen/quince.webp">

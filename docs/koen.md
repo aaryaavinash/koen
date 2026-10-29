@@ -1,8 +1,8 @@
-# 17 · Kōen — "One tree, four seasons"
+# Kōen — "One tree, four seasons"
 Brand: **Kōen** — a bonsai nursery in Saitama with trees older than the country's railways.
 
 ## Signature interaction
-A Japanese maple bonsai (`models/koen/maple.glb`). **Scroll (and a draggable season dial) turns the year**: spring (fresh lime
+A Japanese maple bonsai (`models/maple.glb`). **Scroll (and a draggable season dial) turns the year**: spring (fresh lime
 leaves + a few falling blossoms), summer (deep green, haze), autumn (foliage turns crimson/orange — a shader hue remap that
 affects only foliage-coloured texels; leaves fall as instanced particles with tumbling motion and pile on the moss), winter
 (leaves dissolve via a noise threshold leaving the branch structure — check what's under the foliage in the mesh; if there is
